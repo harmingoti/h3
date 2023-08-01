@@ -1,0 +1,291 @@
+
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans Gujarati', sans-serif;
+}
+
+.pageheding
+{
+    background-color: #990011;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 20px 5px 30px;
+    justify-content: space-between;
+    font-size: 20px;
+    display: flex;
+}
+.menu
+{
+    display: flex;
+    list-style-type: none;
+}
+.menu a
+{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.menu li
+{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.toggle_btn{
+    color: black;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    display: none;
+}
+
+/* --------------------------recipe----------------------------- */
+.content {
+    background-color: #DEF5E5;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.heading {
+    padding-top: 20px;
+    margin-top: 15vh;
+    font-size: 2rem;
+    border-bottom: 3px solid black;
+    display: flex;
+    justify-content: center;
+    color: #990011;
+    cursor: pointer;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    border-radius: 50px;
+    padding: 0px 50px 50px 50px;
+}
+
+.recipe-content {
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+}
+
+.description {
+    padding: 30px 10px 30px 50px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+.description:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.description h3 {
+    font-size: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.description ul {
+    font-size: 1.5rem;
+}
+
+.image {
+    width: 65%;
+}
+
+.image img {
+    width: 800px;
+    border-radius: 50px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.recipe{
+    width: 90%;
+    margin: auto;
+    background: #DEF5E5;
+    border-radius: 50px;
+    padding: 0px 50px 50px 50px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.head{
+    margin-top: 50px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.head h3{
+    font-size: 2rem;
+    color: #990011;
+    border-bottom: 2px solid black;
+}
+
+.ingridiants-text{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ingridiants-text ol{
+    font-size: 1.5rem;
+}
+
+.ingridiants-text ol h5{
+    font-size: 1.5rem;
+}
+
+.ingridiants-text ol li{
+    padding-bottom: 5px;
+}
+
+.steps{
+    margin: 30px 0px 0px 50px;
+}
+
+.steps ol{
+    font-size: 1.5rem;
+}
+
+.steps ol li{
+    padding-bottom: 15px;
+}
+
+.r-footer{
+    margin-top: 3vh;
+    border-top: 2px solid black;
+    text-align: right;
+}   
+
+.r-footer h3{
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #990011;
+}
+
+/* --------------------footer------------------- */
+.footer{
+    margin-top: 10vh;
+    background: #990011;
+ }
+ 
+ .footer-content{
+     padding: 3vh 0vh 3vh 0vh;
+     color: white;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .footer-contect{
+     font-size: 1.2rem;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+ }
+ 
+ .follow{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: 7px;
+     font-size: 1.2rem;
+     width: 50%;
+ }
+ 
+ .social-link i{
+     font-size: 1.7rem;
+     padding: 0px 10px 0px 10px;
+ }
+ 
+ .copyright{
+     background-color: #990011;
+     color: white;
+     height: 5vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ /* -------------------------dropdown------------------- */
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 100px;
+    position: fixed;
+    z-index: 10;
+    height: 0px;
+    width: 200px;
+    background: #DEF5E5;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 150px;
+}
+
+.dropdown_menu a{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #990011;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------------Responsive------------------------ */
+
+/* ##Device = Desktops ##Screen = 1281px to higher resolution desktop */
+@media (min-width: 1281px) {
+    /* code in this block will be applied only if device width>1281 */
+    }
+
+  /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* code in this block will be applied only if device width>1025 and <1280 */
+  }
+  
+  /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* code in this block will be applied only if device width>768 and <1024 */
+    .links{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: flex;
+        align-items: center;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+    .head{
+        flex-direction: column;
+        margin-left: 5rem;
+    }
+  }
+  /* ##Device = Low Resolution Tablets,  ##Screen = B/w 481px to 767px */
+  @media (min-width: 481px) and (max-width: 767px) {
+    /* code in this block will be applied only if device width>481 and <767 */
+  }
+  
+  /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
+  @media (min-width: 320px) and (max-width: 480px) {
+    /* code in this block will be applied only if device width>320 and <480 */
+  }
